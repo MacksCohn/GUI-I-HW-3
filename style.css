@@ -1,0 +1,95 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    font-size: 120%;
+}
+
+fieldset {
+    border-radius: 2px;
+    border-color: black;
+    border-style: dotted;
+    width: 280px;
+    background-color:beige;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+legend {
+    color:darkolivegreen;
+}
+
+#inputs {
+    border-collapse:separate;
+    border-spacing: 10px;
+}
+
+label {
+    float:left;
+}
+
+#inputs > tbody > tr:last-child > td {
+    padding-top: 20px;
+    text-align: center;
+}
+
+input {
+    text-align:right;
+    float:right;
+    border-radius: 10px;
+    border-width: 1px;
+    padding:2px;
+    padding-right: 10px;
+    width: 20%;
+}
+
+.button {
+    border-radius: 5px;
+    border-width: 1px;
+    padding:2px;
+    width: auto;
+    float:none;
+}
+
+#output {
+    margin: 20px auto;
+    min-height: 20px;
+    overflow:auto;
+}
+
+#results {
+    border: 2px black;
+    border-style:dotted;
+    text-align: center;
+    padding: 2px;
+    margin: auto;
+}
+
+#results > tbody > tr > td {
+    padding:3px;
+}
+
+#results > tbody > tr:first-child > td, #results > tbody > tr > td:first-child {
+    background-color:lightyellow;
+    border-style: solid;
+    border-color: #DDDDDD;
+    border-width: 1px 2px 2px 1px;
+}
+
+#results > tbody > tr:not(:first-child) > td:not(:first-child):nth-child(2n+1) {
+    background-color:lightcoral;
+    border-style: solid;
+    border-width: 0px 2px 2px 0px;
+}
+#results > tbody > tr:not(:first-child) > td:not(:first-child):nth-child(2n) {
+    background-color:lightsalmon;
+    border-style: solid;
+    border-width: 0px 2px 2px 0px;
+}
+
+#results > tbody > tr:not(:first-child) > td:not(:first-child):hover {
+    background-color:lightgreen;
+    border-width: 2px 0px 0px 2px;
+}

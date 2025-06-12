@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Max Cohn's Wild Table Extravaganza</title>
+        <link href='./style.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class='container'>
+            <form>
+                <fieldset>
+                    <legend>Max's Table Of DOOOOOM</legend>
+                    <table id='inputs'>
+                        <tbody>
+                        <tr><td>
+                            <label for='minCol'>Minimum Column Value</label>
+                            <input type = 'text' id = 'minCol' value='1'><br>
+                        </td></tr>
+                        <tr><td>
+                            <label for='maxCol'>Maximum Column Value</label>
+                            <input type = 'text' id = 'maxCol' value='10'><br>
+                        </td></tr>
+                        <tr><td>
+                            <label for='minRow'>Minimum Row Value</label>
+                            <input type = 'text' id = 'minRow' value='1'><br>
+                        </td></tr>
+                        <tr><td>
+                            <label for='maxRow'>Maximum Row Value</label>
+                            <input type = 'text' id = 'maxRow' value='10'><br>
+                        </td></tr>
+                        <tr><td>
+                                <input class='button' type='button' value='Generate Table' onclick='Generate("results")'>
+                        </td></tr>
+                        </tbody>
+                    </table> 
+                </fieldset>
+            </form>
+        </div>
+        <div class='container' id='output'>
+            <table id='results'>
+                <tbody>
+                    <td>Enter numbers and hit generate!</td>
+                </tbody>
+            </table>
+        </div>
+        <script src=./script.js></script>
+    </body>
+</html>
+
