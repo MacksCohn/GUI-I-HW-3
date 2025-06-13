@@ -125,9 +125,9 @@ th, #results > tbody > tr > td:first-child{
  */
 .header-top {
     position:sticky;
-    top:0;
+    top:0px;
 }
 .header-side {
     position:sticky;
-    left:0;
+    left:0px;
 }
