@@ -1,10 +1,18 @@
-<!-- Copyright 2025 Max Cohn -->
-<html>
+<!DOCTYPE html>
+<!--
+File: index.html
+GUI Assignment: HW 3
+Max Cohn, Rising Senior at University of Massachusetts Lowell.
+Last Updated: 6/12/2025
+Copyright 2025-->
+<html lang='en'>
     <head>
         <title>Max Cohn's Wild Table Extravaganza</title>
+        <meta charset='utf-8'>
         <link href='./css/style.css' rel='stylesheet'>
     </head>
     <body>
+        <!--the input form for the TABLE OF DOOOOOM-->
         <div class='container'>
             <form onsubmit='Generate("results");return false'>
                 <fieldset>
@@ -35,6 +43,7 @@
                 </fieldset>
             </form>
         </div>
+        <!--area for the table to be generated into-->
         <div class='container' id='output'>
             <table id='results'>
                 <tbody>
