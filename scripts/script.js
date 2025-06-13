@@ -18,11 +18,17 @@ function Generate(id) {
     const firstRow = table.insertRow();
     firstRow.insertCell();
     for (let i = minCol; i <= maxCol; i++) {
-        firstRow.insertCell().textContent = i;
+        const heading = document.createElement('th');
+        heading.textContent = i;
+        heading.className = 'header-top';
+        firstRow.appendChild(heading);
     }
     for (let i = minRow; i <= maxRow; i++) {
         const row = table.insertRow();
-        row.insertCell().textContent = i;
+        const heading = document.createElement('th');
+        heading.textContent = i;
+        heading.className = 'header-side';
+        row.appendChild(heading);
         for (let j = minCol; j <= maxCol; j++) {
             const cell = row.insertCell();
             cell.textContent = i * j;

@@ -1,11 +1,12 @@
+<!-- Copyright 2025 Max Cohn -->
 <html>
     <head>
         <title>Max Cohn's Wild Table Extravaganza</title>
-        <link href='./style.css' rel='stylesheet'>
+        <link href='./css/style.css' rel='stylesheet'>
     </head>
     <body>
         <div class='container'>
-            <form>
+            <form onsubmit='Generate("results");return false'>
                 <fieldset>
                     <legend>Max's Table Of DOOOOOM</legend>
                     <table id='inputs'>
@@ -27,7 +28,7 @@
                             <input type = 'text' id = 'maxRow' value='10'><br>
                         </td></tr>
                         <tr><td>
-                                <input class='button' type='button' value='Generate Table' onclick='Generate("results")'>
+                                <input class='button' type='submit' value='Generate Table'>
                         </td></tr>
                         </tbody>
                     </table> 
@@ -41,7 +42,7 @@
                 </tbody>
             </table>
         </div>
-        <script src=./script.js></script>
+        <script src=./scripts/script.js></script>
     </body>
 </html>
 
